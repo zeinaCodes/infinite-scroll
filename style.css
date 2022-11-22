@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch:wght@300&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    font-family : Bebas Neue, sans-serif;
+    background: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+/* Loader */
+
+.loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.loader img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* top and left center the top right corner of the img */
+    transform: translate(-50%, -50%); 
+     /*this centers the img of the loader rather than the top left corner  */
+
+}
+
+/* image container */
+
+.image-container {
+    margin: 10px 30%;
+}
+
+.image-container img {
+    width: 100%;
+    /* alters the width to match that of the parent div */
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+/* media query: large smartphone */
+@media screen and (max-width: 600px) {
+    /* any smartphone with less than 600px width will apply this styling */
+h1 {
+    font-size: 20px;
+}
+.image-container {
+    margin: 10px;
+}
+}
